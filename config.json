@@ -1,0 +1,28 @@
+{
+   "wait": {
+    "command": "/root/wait",
+     "args": "30"
+  }
+  ,
+  "mp4mp3" : {
+    "command": "/bin/sh",
+    "args": "-c '/usr/bin/ffmpeg -y -i /var/records/$src -vcodec libx264 -acodec libmp3lame -ar 44100 -ac 1 -f /var/records/$dest.mp4' "
+
+  }
+  ,
+  "mp4aac" : {
+    "command": "/usr/bin/ffmpeg",
+    "args": "-y -i /var/records/$src -vcodec libx264 -acodec aac -ar 44100 -ab 128k -strict -2 /var/records/$dest.mp4",
+    "limit": 2
+  }
+  ,
+  "stream": {
+    "command": "/usr/bin/ffmpeg",
+      "args": "-re -i /var/records/$src -vcodec libx264 -preset faster -x264opts nal-hrd=cbr:force-cfr=1:keyint=60 -b:v 1000k -maxrate 1500k -bufsize 3000k -s 1280x720 -sws_flags spline -r 30 -acodec aac -ar 44100 -ab 128k -strict -2 -f flv $dest"
+  }
+  ,
+  "rtmp_reload": {
+    "command": "/root/nginx.exe",
+    "args": "-s reload"
+  }
+}

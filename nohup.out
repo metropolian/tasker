@@ -1,0 +1,134 @@
+Tasks control on port 8080
+Tasks control on port 8080
+warn:    --minUptime not set. Defaulting to: 1000ms
+warn:    --spinSleepTime not set. Your script will exit if it does not stay up for at least 1000ms
+Tasks control on port 8080
+warn:    --minUptime not set. Defaulting to: 1000ms
+warn:    --spinSleepTime not set. Your script will exit if it does not stay up for at least 1000ms
+Tasks control on port 8080
+Tasks control on port 8080
+Tasks control on port 8080
+Reload configs.
+Reload configs.
+Reload configs.
+[ '30' ]
+wait (10782) #739741598 start!.
+wait (10782) #739741598 finished! 0 null
+[ '-y',
+  '-i',
+  '/var/records/16-08-07-12-12-06.flv',
+  '-vcodec',
+  'libx264',
+  '-acodec',
+  'aac',
+  '-ar',
+  '44100',
+  '-ab',
+  '128k',
+  '-strict',
+  '-2',
+  '/var/records/16-08-07-12-12-06.mp4' ]
+mp4aac (10841) #739743881 start!.
+mp4aac (10841) #739743881 finished! 0 null
+Reload configs.
+Reload configs.
+[ '-re',
+  '-i',
+  '/var/records/16-08-06-10-36-32.flv',
+  '-vcodec',
+  'libx264',
+  '-preset',
+  'faster',
+  '-x264opts',
+  'nal-hrd=cbr:force-cfr=1:keyint=60',
+  '-b:v',
+  '1000k',
+  '-maxrate',
+  '1500k',
+  '-bufsize',
+  '3000k',
+  '-s',
+  '1280x720',
+  '-sws_flags',
+  'spline',
+  '-r',
+  '30',
+  '-acodec',
+  'aac',
+  '-ar',
+  '44100',
+  '-ab',
+  '128k',
+  '-strict',
+  '-2',
+  '-f',
+  'flv',
+  'rtmp://rtmp-api.facebook.com:80/rtmp/211518105917667?ds=1&a=Aab_LuoNHxIruQQI' ]
+stream (20603) #740413579 start!.
+stream (20603) #740413579 finished! 255 null
+[ '-re',
+  '-i',
+  '/var/records/16-08-06-10-36-32.flv',
+  '-vcodec',
+  'libx264',
+  '-preset',
+  'faster',
+  '-x264opts',
+  'nal-hrd=cbr:force-cfr=1:keyint=60',
+  '-b:v',
+  '1000k',
+  '-maxrate',
+  '1500k',
+  '-bufsize',
+  '3000k',
+  '-s',
+  '1280x720',
+  '-sws_flags',
+  'spline',
+  '-r',
+  '30',
+  '-acodec',
+  'aac',
+  '-ar',
+  '44100',
+  '-ab',
+  '128k',
+  '-strict',
+  '-2',
+  '-f',
+  'flv',
+  'rtmp://rtmp-api.facebook.com:80/rtmp/211525222583622?ds=1&a=AaYPj3Vb-VPiNaHK' ]
+stream (20664) #740415781 start!.
+stream (20664) #740415781 finished! 0 null
+[ '-y',
+  '-i',
+  '/var/records/16-08-07-10-15-58.flv',
+  '-vcodec',
+  'libx264',
+  '-acodec',
+  'aac',
+  '-ar',
+  '44100',
+  '-ab',
+  '128k',
+  '-strict',
+  '-2',
+  '/var/records/16-08-07-10-15-58.mp4' ]
+mp4aac (30088) #741085922 start!.
+mp4aac (30088) #741085922 finished! 0 null
+[ '-y',
+  '-i',
+  '/var/records/16-08-09-11-42-24.flv',
+  '-vcodec',
+  'libx264',
+  '-acodec',
+  'aac',
+  '-ar',
+  '44100',
+  '-ab',
+  '128k',
+  '-strict',
+  '-2',
+  '/var/records/16-08-09-11-42-24.mp4' ]
+mp4aac (6112) #741464604 start!.
+mp4aac (6112) #741464604 finished! 0 null
